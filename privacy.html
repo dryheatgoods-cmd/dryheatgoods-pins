@@ -18,20 +18,28 @@ a{color:var(--ink)}
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="muted">Dry Heat Goods Co &middot; Effective September 24, 2026</p>
+<p class="muted">Dry Heat Goods Co &middot; Effective September 25, 2026</p>
 
-<p>Dry Heat Goods Co is a small print-on-demand apparel shop based in Phoenix, Arizona. We sell original T-shirt designs through our Etsy shop and share them on Pinterest. This policy explains how our website and our Pinterest integration handle information.</p>
+<p>Dry Heat Goods Co is a small print-on-demand apparel shop based in Phoenix, Arizona. We sell original T-shirt designs through our Etsy shop and share them on Pinterest. This policy explains how our website and our Pinterest app, Dry Heat Goods Co Scheduler, handle information.</p>
 
 <h2>Our Pinterest integration</h2>
-<p>We use the Pinterest API only to manage our own Pinterest business account. Our app creates and schedules Pins that show our own product designs, organizes them on our own boards, and reads basic performance statistics (such as impressions, saves and clicks) for those Pins so we can see which designs people like.</p>
+<p>We use the Pinterest API only to manage our own Pinterest business account. We connect that account through Pinterest's OAuth sign-in; we never ask for or store a Pinterest password. Our app:</p>
+<ul>
+  <li>reads our own account profile and list of boards, so it can post to the right board;</li>
+  <li>creates Pins that show our own original product designs, each linking to the matching listing in our Etsy shop, at most two per day;</li>
+  <li>reads back each Pin it creates to confirm it was published correctly, and can delete Pins it created (for example, a test Pin on a secret test board).</li>
+</ul>
 <p>The app is used only by the shop owner. It does not ask other Pinterest users to log in, and it does not collect, store or process personal information about other Pinterest users.</p>
 
 <h2>Information we store</h2>
 <ul>
-  <li>An access token for our own Pinterest account, stored securely on the shop owner's computer and used only to post to and read statistics from that account.</li>
-  <li>Aggregate performance numbers for our own Pins, stored on the shop owner's computer.</li>
+  <li>The OAuth access and refresh tokens for our own Pinterest account, kept in a file on the shop owner's computer that only the owner's user account can read. They are never displayed, published or shared, and are used only to call the Pinterest API for our own account.</li>
+  <li>A record of the Pins our app has created (Pin ID, board and time posted), kept on the shop owner's computer so the same Pin is never posted twice.</li>
 </ul>
 <p>We do not sell, rent or share this information with anyone. We do not use it for advertising profiles.</p>
+
+<h2>Retention and deletion</h2>
+<p>We keep the tokens only while the integration is in use and the Pin records only as long as we need them to avoid duplicate posts. We can revoke the app's access to our Pinterest account at any time in Pinterest's settings; when we do, we delete the stored tokens within 30 days. If you have a question about your information, contact us and we will respond within 30 days.</p>
 
 <h2>This website</h2>
 <p>This website is a simple information page hosted on GitHub Pages. We do not use cookies, analytics or tracking on it, and we do not collect any information from visitors. GitHub, as the host, may keep standard server logs under its own privacy policy.</p>
@@ -39,14 +47,11 @@ a{color:var(--ink)}
 <h2>Purchases</h2>
 <p>All purchases happen on Etsy. Order and payment information is handled by Etsy under <a href="https://www.etsy.com/legal/privacy/">Etsy's Privacy Policy</a>. Orders are fulfilled by our production partner, Printify, which receives the shipping details needed to print and ship each order.</p>
 
-<h2>Deleting data</h2>
-<p>We can revoke our app's access to our Pinterest account and delete the stored token and statistics at any time. If you have a question about your information, contact us and we will respond within 30 days.</p>
-
 <h2>Changes</h2>
 <p>If this policy changes, we will update this page and its effective date.</p>
 
 <h2>Contact</h2>
-<p>Message us through our Etsy shop: <a href="https://www.etsy.com/shop/DryHeatGoodsCo">etsy.com/shop/DryHeatGoodsCo</a></p>
+<p>Email <a href="mailto:dryheatgoods@gmail.com">dryheatgoods@gmail.com</a> or message us through our Etsy shop: <a href="https://www.etsy.com/shop/DryHeatGoodsCo">etsy.com/shop/DryHeatGoodsCo</a></p>
 
 <p class="muted"><a href="index.html">&larr; Dry Heat Goods Co</a></p>
 </main>
